@@ -6,7 +6,7 @@ Computer vision project for automatic inner-corner detection and sheet identifie
 
 # Overview
 
-This project processes scanned 1950s map sheets and automatically extracts:
+This project processes scanned 1950s historical map sheets and automatically extracts:
 
 - upper-left corner
 - upper-right corner
@@ -14,18 +14,20 @@ This project processes scanned 1950s map sheets and automatically extracts:
 - lower-left corner
 - sheet identifier
 
-The system is designed for large-scale batch processing and evaluation on historical scanned maps.
+The pipeline is designed for large-scale batch processing and evaluation on noisy historical scans with varying quality and artifacts.
 
 ---
 
 # Features
 
-- automatic corner detection
-- automatic sheet ID recognition
+- automatic inner-corner detection
+- automatic sheet identifier recognition
+- robust preprocessing for historical scans
 - batch image processing
-- debug visualization outputs
-- result export
-- robust handling of noisy scans
+- visualization and debug outputs
+- result export pipeline
+- scalable evaluation workflow
+- robust handling of noise, shadows, and scan artifacts
 
 ---
 
@@ -42,7 +44,47 @@ The system is designed for large-scale batch processing and evaluation on histor
 
 | Metric | Result |
 |---|---|
-| Corner detection | ~5 px error for >95% of sheets |
+| Corner detection accuracy | ~5 px error for >95% of sheets |
 | OCR accuracy | ~95% exact identifier accuracy |
 
 ---
+
+# Example Results
+
+## Original Map Sheet
+
+![Original Map](example_result/img.jpg)
+
+---
+
+## Detected Inner Corners
+
+The system automatically detects the four inner map corners and visualizes them on the original scan.
+
+![Detected Corners](example_result/img_corners.jpg)
+
+---
+
+## Detected Sheet Identifier
+
+The OCR pipeline extracts the sheet identifier from the historical map sheet.
+
+![Detected Identifier](example_result/img_id.jpg)
+
+---
+
+# Project Structure
+
+```text
+project/
+│
+├── example_result/
+│   ├── img.jpg
+│   ├── img_corners.jpg
+│   └── img_id.jpg
+│
+├── test_maps/
+├── results/
+├── map_detector_project/
+│
+└── README.md
