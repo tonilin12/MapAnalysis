@@ -51,12 +51,6 @@ The pipeline is designed for large-scale batch processing and evaluation on nois
 
 # Example Results
 
-## Original Map Sheet
-
-![Original Map](example_result/img.jpg)
-
----
-
 ## Detected Inner Corners
 
 The system automatically detects the four inner map corners and visualizes them on the original scan.
@@ -71,20 +65,3 @@ The OCR pipeline extracts the sheet identifier from the historical map sheet.
 
 ![Detected Identifier](example_result/img_id.png)
 
----
-
-# Project Structure
-
-```text
-project/
-│
-├── example_result/
-│   ├── img.jpg
-│   ├── img_corners.jpg
-│   └── img_id.jpg
-│
-├── test_maps/
-├── results/
-├── map_detector_project/
-│
-└── README.md
