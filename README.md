@@ -53,7 +53,7 @@ The pipeline is designed for large-scale batch processing and evaluation on nois
 
 ## Detected Inner Corners
 
-The system automatically detects the four inner map corners and visualizes them on the original scan.
+The system automatically detects the four inner map corners 
 
 ![Detected Corners](example_result/img_corners.jpg)
 
