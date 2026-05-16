@@ -69,7 +69,7 @@ The system automatically detects the four inner map corners and visualizes them 
 
 The OCR pipeline extracts the sheet identifier from the historical map sheet.
 
-![Detected Identifier](example_result/img_id.jpg)
+![Detected Identifier](example_result/img_id.png)
 
 ---
 
